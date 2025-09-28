@@ -18,6 +18,7 @@ await page.locator('body').click();
 
   // Wait for page to load
 
+  
   await page.getByText('Login here',{exact:true}).click();
    await page.waitForLoadState('load');
 
