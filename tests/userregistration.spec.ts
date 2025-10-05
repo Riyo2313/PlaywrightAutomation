@@ -6,7 +6,7 @@ import { execPath } from 'process';
 // name and password is not same as mentioned in requirement
 //do not have element 'text' for success message
 test('user registration page with ivalid name and pass(not a alphnumeric)', async ({ page }) => {
-  await page.locator('body').click();
+  //await page.locator('body').click();
   await page.goto('file:///C:/Users/Rishi\'s%20HP/Downloads/SmartBank.html#');
   await page.getByRole('textbox', { name: 'Full Name' }).click();
   await page.getByRole('textbox', { name: 'Full Name' }).fill('John124');

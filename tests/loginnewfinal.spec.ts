@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 //login with correct password
 test('user login form test', async ({ page }) => {
-await page.locator('body').click();
+//await page.locator('body').click();
   await page.goto('file:///C:/Users/Rishi\'s%20HP/Downloads/SmartBank.html#');
   await page.getByRole('textbox', { name: 'Full Name' }).click();
   await page.getByRole('textbox', { name: 'Full Name' }).fill('Seema');
